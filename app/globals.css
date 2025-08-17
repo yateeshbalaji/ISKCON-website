@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* calendar styles */
+
+.fc-header-toolbar {
+  display: inline-block;
+  padding: 4px 4px;
+
+  @apply space-x-8;
+}
+
+.fc .fc-toolbar-title {
+  @apply text-lg md:text-2xl;
+}
+
+.fc-day {
+  @apply m-8 cursor-pointer;
+}
+
+.fc-scrollgrid-sync-table {
+  @apply w-full;
+}
+
+.fc-view {
+  @apply w-full h-full lg:h-3/4 xl:h-2/3 bg-white;
+}
+
+.fc-h-event {
+  @apply bg-violet-800 border border-violet-800;
+}
+
+.fc-h-event.ekadasi{
+  @apply bg-red-600 border border-red-600;
+}
+
+.fc .fc-daygrid-day:hover{
+  @apply bg-violet-50;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  @apply bg-violet-100;
+}
+
+.fc-toolbar-chunk {
+  @apply flex items-center;
+}
+
+.fc .fc-button {
+  @apply bg-violet-800 hover:bg-violet-900;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active {
+  @apply bg-violet-600;
+}
+
+.fc .fc-button-primary:disabled {
+  @apply bg-violet-600;
+}
+.fc-v-event {
+  @apply bg-violet-500 border border-violet-600;
+}
